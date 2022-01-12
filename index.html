@@ -6,6 +6,12 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="icon" href="/favicon.ico" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+    rel="stylesheet"
+  />
   <title>User List</title>
 </head>
 
@@ -15,3 +21,88 @@
 </body>
 
 </html>
+
+
+<style>
+  html,
+  body {
+    height: 100%;
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+  }
+
+  .wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.05);
+  }
+  .container {
+    width: 40%;
+    max-height: 80%;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    border-radius: 0.25rem;
+    box-shadow: 0px 0px 10px 5px #ddd;
+    overflow-y: auto;
+  }
+  .persons {
+    width: 100%;
+  }
+  .persons hr {
+    border: none;
+    color: #ddd;
+    background-color: #ddd;
+    height: 1px;
+  }
+  .person {
+    display: flex;
+    align-items: center;
+    padding: 0.25rem;
+    margin-bottom: 0.5rem;
+    width: 100%;
+  }
+  .person .avatar {
+    flex-shrink: 0;
+    border-radius: 50%;
+    width: 4rem;
+    height: 4rem;
+    margin-right: 1rem;
+  }
+  .person .text-container {
+    flex-grow: 1;
+  }
+ 
+  .person .title {
+    font-size: 1rem;
+  }
+  .person .text {
+    color: #bbb;
+    font-size: .9rem;
+    
+  }
+  .person .delete-button {
+    border-radius: 50%;
+    flex-shrink: 0;
+    border: 1px solid rgb(75, 75, 75);
+    width: 0.5rem;
+    height: 0.5rem;
+    padding: 0.3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    
+  }
+ 
+  .add-button {
+    margin-left: 5rem;
+    cursor: pointer;
+  }
+</style>
